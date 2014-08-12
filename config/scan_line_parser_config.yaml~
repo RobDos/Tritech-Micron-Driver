@@ -1,0 +1,14 @@
+#**************************************
+#**********Laser Scan parameters*******
+#**************************************
+#Frame id of the sonar
+scan_line_parser/min_laser_intensity_threshold : 50
+#Serial port the sonar is connected to 
+#scan_line_parser/: "/dev/ttyUSB0"
+#**************************************
+#********Point Cloud parameters********
+#**************************************
+scan_line_parser/use_point_cloud_threshold : true 
+scan_line_parser/min_distance_threshold : 2.0
+scan_line_parser/min_point_cloud_intensity_threshold: 10 
+scan_line_parser/only_first_point : false

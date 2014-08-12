@@ -1,0 +1,5 @@
+double min_laser_intensity_threshold
+bool use_point_cloud_threshold
+double min_distance_threshold
+double min_point_cloud_intensity_threshold 
+bool only_first_point 

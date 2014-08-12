@@ -1,0 +1,8 @@
+uint16 nbins 
+uint8 range
+float64 vos
+uint16 angle_step_size
+uint32 leftLimit
+uint32 rightLimit
+---
+int8 result

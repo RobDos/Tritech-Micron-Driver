@@ -1,0 +1,7 @@
+float64 min_laser_intensity_threshold
+bool use_point_cloud_threshold
+float64 min_distance_threshold
+float64 min_point_cloud_intensity_threshold 
+boolean only_first_point 
+---
+bool result

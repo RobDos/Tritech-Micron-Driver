@@ -1,0 +1,35 @@
+#**************************************
+#**********Sonar parameters************
+#**************************************
+#Frame id of the sonar
+micron_driver/frame_id_ : "Micron"
+#Serial port the sonar is connected to 
+micron_driver/port_ : "/dev/ttyUSB1"
+#Number of measurements to be taken 
+micron_driver/num_bins_ : 200
+#Sonar range (m)
+micron_driver/range_ : 5
+#Velocity of sound in water 
+micron_driver/velocity_of_sound_ : 1500
+#Angle between two consecutive steps, in 1/16 gradians: 32 = 1.8º, 16 = 0.9º, 8 = 0.45º, 4 = 0.225º
+micron_driver/angle_step_size_ : 32
+#Left Limit of scanning sector
+micron_driver/leftLimit_ : 6399
+#Right limit of scanning sector
+micron_driver/rightLimit_ : 6399
+#Debug mode for the driver 
+micron_driver/use_debug_mode : true
+#Simulate the sonar
+micron_driver/simulate_ : false
+#**************************************
+#********Simulation parameters*********
+#**************************************
+micron_driver/simulate_num_bins_ : 500 
+micron_driver/simulate_bin_distance_step_ : 1.0 
+micron_driver/simulate_distance: 10.0 
+micron_driver/simulate_intensity: 255 
+micron_driver/simulate_intensity_variance : 10.0 
+micron_driver/simulate_use_manual_angle : False 
+micron_driver/simulate_manual_angle : 180.0 
+micron_driver/simulate_scan_angle_velocity : 180.0 
+
