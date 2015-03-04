@@ -10,5 +10,5 @@ scan_line_parser/min_laser_intensity_threshold : 50
 #**************************************
 scan_line_parser/use_point_cloud_threshold : true 
 scan_line_parser/min_distance_threshold : 2.0
-scan_line_parser/min_point_cloud_intensity_threshold: 10 
-scan_line_parser/only_first_point : false
+scan_line_parser/min_point_cloud_intensity_threshold: 100 
+scan_line_parser/only_first_point : true

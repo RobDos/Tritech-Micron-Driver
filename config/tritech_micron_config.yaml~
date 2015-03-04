@@ -14,7 +14,7 @@ micron_driver/velocity_of_sound_ : 1500
 #Angle between two consecutive steps, in 1/16 gradians: 32 = 1.8º, 16 = 0.9º, 8 = 0.45º, 4 = 0.225º
 micron_driver/angle_step_size_ : 32
 #Left Limit of scanning sector
-micron_driver/leftLimit_ : 1600
+micron_driver/leftLimit_ : 6399
 #Right limit of scanning sector
 micron_driver/rightLimit_ : 6399
 #Debug mode for the driver 

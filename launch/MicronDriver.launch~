@@ -1,21 +1,20 @@
 <launch>
 
 <!--Play a recorded file -->
-<node pkg="rosbag" name="play" type="play"  args="$(find micron_driver_ros)/bags/2014-07-18-20-59-31.bag"/>
-<!--node pkg="rosbag" name="play" type="play"  args="$(find micron_driver_ros)/bags/2014-07-18-21-02-59.bag"/-->
-<!--node pkg="rosbag" name="play" type="play"  args="$(find micron_driver_ros)/bags/2014-07-18-21-05-09.bag"/-->
-<!--node pkg="rosbag" name="play" type="play"  args="$(find micron_driver_ros)/bags/2014-07-18-21-11-13.bag"/-->
-
+<!--node pkg="rosbag" name="play" type="play"  args="$(find micron_driver_ros)/bags/2014-07-18-20-59-31.bag"/-->
+<node pkg="rosbag" name="play" type="play"  args="--clock $(find micron_driver_ros)/bags/2014-07-18-21-02-59.bag"/>
+<!--node pkg="rosbag" name="play" type="play"  args=" $(find micron_driver_ros)/bags/2014-07-18-21-05-09.bag"/-->
+<!--node pkg="rosbag" name="play" type="play"  args=" $(find micron_driver_ros)/bags/2014-07-18-21-11-13.bag"/-->
 
 
 <!-- Load parameters for the scanline parser-->
 <rosparam command="load" file="$(find micron_driver_ros)/config/scan_line_parser_config.yaml"/>
 
 <!--Create a node parser -->
-<node pkg="micron_driver_ros" type="micron_driver_scanline_parser" name="Scanline_parser" output="screen" />
+<node pkg="micron_driver_ros" type="micron_driver_scanline_parser" name="scanline_parser" output="screen" />
 
 <!--Set the frame for the Sonar -->
- <node pkg="tf" type="static_transform_publisher" name="Sonar_to_world" args="0.0 0.0 0.0 0.0 0.0 0 /Micron /world 100" />
+ <node pkg="tf" type="static_transform_publisher" name="Sonar_to_Sparus" args="1.0 0.0 0.0 0.0 0.0 1.57 /sparus2 /Micron 100" />
 
 <!--Launch RViz -->
 <node pkg="rviz" type="rviz" name="rviz" args="-d $(find micron_driver_ros)/config/Rviz_config.rviz" />

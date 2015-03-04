@@ -32,4 +32,3 @@ micron_driver/simulate_intensity_variance : 10.0
 micron_driver/simulate_use_manual_angle : False 
 micron_driver/simulate_manual_angle : 180.0 
 micron_driver/simulate_scan_angle_velocity : 180.0 
-
